@@ -1,0 +1,28 @@
+{
+  "name": "friend_finder",
+  "version": "0.0.0",
+  "description": "An app that allows the user to answer a few questions, then returns a \"friend\" that had the most similar answers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deanhooker/friend_finder.git"
+  },
+  "keywords": [
+    "friend",
+    "finder"
+  ],
+  "author": "deanh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deanhooker/friend_finder/issues"
+  },
+  "homepage": "https://github.com/deanhooker/friend_finder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
