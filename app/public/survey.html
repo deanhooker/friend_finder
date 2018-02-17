@@ -6,6 +6,7 @@
     <!-- bootstap 3.3.7 link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -16,10 +17,10 @@
             <strong>About You</strong>
         </h3>
         <h4>Name (Required)</h4>
-        <input type="text" id="name" class="form-control" required="">
+        <input type="text" id="user-name" class="form-control" required="">
         <br>
         <h4>Link to your photo (Required)</h4>
-        <input type="text" id="photo" class="form-control" required="">
+        <input type="text" id="user-photo" class="form-control" required="">
         <hr>
 
         <h3>
@@ -179,3 +180,32 @@
 </footer>
 
 </html>
+
+<script type="text/javascript">
+
+    $("#submit").on("click", function(event) {
+
+        event.preventDefault();
+
+        let userData = {
+            name: $("#user-name").val(),
+            photo: $("#user-photo").val(),
+            answers: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()
+            ]
+        };
+
+        $.post("/api/friends", userData, function (data) {
+                console.log("working");
+            });
+    });
+</script>
