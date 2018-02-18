@@ -22,47 +22,47 @@ let friendsDataArray = [
     },
     {
         name: "Luke Skywalker",
-        photo: "",
+        photo: "https://fsmedia.imgix.net/5b/03/be/9d/02f5/4bdb/b99f/59c8fe6e37bb/luke-skywalker-retrojpg.jpeg?fm=jpg&w=1200&h=1200&crop=entropy&fit=crop",
         answers: [5, 4, 3, 2, 4, 2, 2, 2, 4, 2]
     },
     {
         name: "Steve Zissou",
-        photo: "",
+        photo: "http://cardiff.carpediem.cd/data/afisha/o/ff/e6/ffe67da45e.jpg",
         answers: [3, 2, 4, 2, 2, 4, 2, 2, 2, 2,]
     },
     {
         name: "Jack Sparrow",
-        photo: "",
+        photo: "http://media.beliefnet.com/~/media/photos-with-attribution/entertainment/movies/jack-sparrow_credit-Walt-Disney-Studios.jpg",
         answers: [4, 3, 3, 1, 4, 5, 2, 1, 3, 5]
     },
     {
         name: "Tony Stark",
-        photo: "",
+        photo: "https://vignette4.wikia.nocookie.net/ironman/images/9/9d/Tumblr_l1iotoYo541qbn8c7.jpg/revision/latest?cb=20131120195052",
         answers: [5, 1, 5, 1, 2, 5, 1, 3, 1, 2]
     },
     {
         name: "John McClane",
-        photo: "",
+        photo: "https://d.ibtimes.co.uk/en/full/288544/die-hard-1988-die-harder-1990-die-hard-with-a-vengeance-1995.jpg?w=736",
         answers: [2, 4, 5, 4, 4, 3, 4, 5, 3, 1]
     },
     {
         name: "Dr. Emmett Brown",
-        photo: "",
+        photo: "https://vignette.wikia.nocookie.net/back-to-the-future-1985-movie/images/8/8c/Dr._Emmett_Brown.png/revision/latest?cb=20151130195154",
         answers: [5, 1, 4, 1, 4, 5, 5, 1, 1, 1]
     },
     {
         name: "Rocky Balboa",
-        photo: "",
+        photo: "https://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/_main_rocky_0.jpg",
         answers: [2, 2, 4, 5, 2, 3, 2, 2, 4, 4]
     },
     {
         name: "Fogell aka 'McLovin'",
-        photo: "",
+        photo: "http://images2.fanpop.com/images/photos/6800000/CMP-in-Superbad-christopher-mintz-plasse-6876640-500-281.jpg",
         answers: [4, 2, 1, 3, 2, 2, 5, 1, 2, 5]
     },
     {
         name: "Indiana Jones",
-        photo: "",
+        photo: "https://shortlist.imgix.net/app/uploads/2018/01/22104009/oh-goodie-theyre-working-on-indiana-jones-5-crop-1516617647-866x577.jpg?w=1200&h=1&fit=max&auto=format%2Ccompress",
         answers: [5, 5, 3, 2, 4, 2, 4, 3, 2, 3]
     }
 ]

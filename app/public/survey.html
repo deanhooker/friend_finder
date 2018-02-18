@@ -6,7 +6,11 @@
     <!-- bootstap 3.3.7 link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <!-- jquery link -->
     <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- bootstrap js link -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -167,6 +171,28 @@
             <i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
         <br>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="match-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="modal-title">Best Match</h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img class="img-responsive" id="match-img" src="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <footer>
@@ -223,9 +249,13 @@
             };
 
             $.post("/api/friends", userData, function (data) {
-                console.log("working");
+
+                // Post and return best match, then toggle modal
+                $("#match-name").text(data.name);
+                $("#match-img").attr("src", data.photo);
+                $("#match-modal").modal("toggle");
             });
-        } 
+        }
         else {
             alert("Please fill out all fields");
         }
