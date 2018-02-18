@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 // Create express server
 var app = express();
 // Set port
-var port = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 
 // Handle data parsing
 app.use(bodyParser.urlencoded({extended: true}));
